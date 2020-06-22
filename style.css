@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #607B8D
+}
+
+.fan {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%)
+}
+
+.sides {
+    height: 400px;
+    width: 600px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center ;
+    transform: rotateX(70deg) rotateY(40deg) rotateZ(10deg)
+}
+
+.sides > div {
+    height: 200px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #BBB;
+    position: absolute;
+    transform-origin: right
+}
+
+.sides > div:first-of-type {
+    transform: rotateY(0deg)
+}
+
+.sides > div:nth-of-type(2) {
+    transform: rotateY(45deg)
+}
+
+.sides > div:nth-of-type(3) {
+    transform: rotateY(90deg)
+}
+
+.sides > div:nth-of-type(4) {
+    transform: rotateY(135deg)
+}
+
+.sides > div:nth-of-type(5) {
+    transform: rotateY(180deg)
+}
+
+.sides > div:nth-of-type(6) {
+    transform: rotateY(225deg)
+}
+
+.sides > div:nth-of-type(7) {
+    transform: rotateY(270deg)
+}
+
+.sides > div:nth-of-type(8) {
+    transform: rotateY(315deg)
+}
